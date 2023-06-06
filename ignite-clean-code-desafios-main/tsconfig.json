@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "ES2015"],
+    "target": "es6",
+    "module": "CommonJS",
+    "strict": false,
+    "noImplicitAny": false,
+    "jsx": "react-jsx",
+    "composite": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+  },
+  "exclude": ["node_modules"]
+}

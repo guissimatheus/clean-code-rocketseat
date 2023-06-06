@@ -2,6 +2,8 @@
 
 Anotações a respeito do curso ***Clean Code*** da **[Rocketseat](https://www.rocketseat.com.br/ "Página oficial")** ministrado por **[Diego Fernandes](https://www.linkedin.com/in/diego-schell-fernandes/)** com foco em *clean code* prático.
 
+[Repositório](https://github.com/rocketseat-education/ignite-clean-code-desafios) dos desafios.
+
 <details>
 <summary><b>Índice de conteúdo do curso</b></summary>
 
@@ -10,7 +12,7 @@ Anotações a respeito do curso ***Clean Code*** da **[Rocketseat](https://www.r
   - [Princípios do código limpo](#princípios-do-código-limpo)
 - [Código limpo com JavaScript](#código-limpo-com-javascript)
   - [Nomenclatura de variáveis](#nomenclatura-de-variáveis)
-  - Desafio: Nomeação de variáveis
+  - [Desafio: Nomeação de variáveis](https://efficient-sloth-d85.notion.site/Desafio-Nomea-o-de-vari-veis-0a8484a8cdc743558d6677910590a874)
   - Código limpo em booleanos
   - Deasfio: Booleanos
   - Causa vs. Efeito
