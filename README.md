@@ -3,7 +3,7 @@
 Anotações a respeito do curso ***Clean Code*** da **[Rocketseat](https://www.rocketseat.com.br/ "Página oficial")** ministrado por **[Diego Fernandes](https://www.linkedin.com/in/diego-schell-fernandes/)** com foco em *clean code* prático.
 
 <details>
-<summary>Índice de conteúdo do curso</summary>
+<summary><b>Índice de conteúdo do curso</b></summary>
 
 - [Fundamentos de *Clean Code*](#fundamentos-de-clean-code)
   - [O que é ou não é *Clean Code*](#o-que-é-ou-não-é-clean-code)
@@ -67,7 +67,7 @@ Exemplo: um projeto com várias pastas, arquivos de 100 linhas e performance exc
 - Prefira nomes longos que explicitam o significado/uso da variável
 - Evite nomes genéricos
 
-Exemplos práticos no [arquivo](JavaScript/1_nomeclatura_variaveis.js).
+Exemplos práticos no [arquivo](JavaScript/01_nomeclatura_variaveis.js).
 
 ## Código limpo no React
 
