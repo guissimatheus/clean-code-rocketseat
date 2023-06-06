@@ -12,7 +12,7 @@ Anotações a respeito do curso ***Clean Code*** da **[Rocketseat](https://www.r
   - [Princípios do código limpo](#princípios-do-código-limpo)
 - [Código limpo com JavaScript](#código-limpo-com-javascript)
   - [Nomenclatura de variáveis](#nomenclatura-de-variáveis)
-  - [Desafio: Nomeação de variáveis](https://efficient-sloth-d85.notion.site/Desafio-Nomea-o-de-vari-veis-0a8484a8cdc743558d6677910590a874)
+  - [Desafio: Nomeação de variáveis](#desafio-nomeação-de-variáveis)
   - Código limpo em booleanos
   - Deasfio: Booleanos
   - Causa vs. Efeito
@@ -70,6 +70,10 @@ Exemplo: um projeto com várias pastas, arquivos de 100 linhas e performance exc
 - Evite nomes genéricos
 
 Exemplos práticos no [arquivo](JavaScript/01_nomeclatura_variaveis.js).
+
+### Desafio: Nomeação de variáveis
+
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Nomea-o-de-vari-veis-0a8484a8cdc743558d6677910590a874) consiste em aplicar os conhecimentos da aula nas variáveis e atributos de objetos do arquivo [01-nomenclatura-de-variaveis](ignite-clean-code-desafios-main/desafios/01-nomenclatura-de-variaveis.ts).
 
 ## Código limpo no React
 
