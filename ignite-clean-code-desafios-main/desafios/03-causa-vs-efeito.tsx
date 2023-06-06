@@ -1,4 +1,6 @@
-// Causa vs Efeito
+// Desafio: Causa vs. Efeito
+// Os comentários são as linhas de código originais
+
 import { useEffect, useState } from "react"
 
 interface User {

@@ -16,9 +16,9 @@ Anotações a respeito do curso ***Clean Code*** da **[Rocketseat](https://www.r
   - [Código limpo em booleanos](#código-limpo-em-booleanos)
   - [Desafio: Booleanos](#desafio-código-limpo-em-booleanos)
   - [Causa vs. Efeito](#causa-vs-efeito)
-  - Desafio: Causa vs. Efeito
-  - Código em inglês
-  - Desafio: Código em inglês
+  - [Desafio: Causa vs. Efeito](#desafio-causa-vs-efeito)
+  - [Código em inglês](#código-em-inglês)
+  - [Desafio: Código em inglês](#desafio-código-em-inglês)
   - Regras em condicionais
   - Desafio: Regras em condicionais
   - Parâmetros e desestruturação
@@ -73,7 +73,7 @@ Exemplos práticos no [arquivo](JavaScript/01_nomeclatura_variaveis.js).
 
 ### Desafio: Nomeação de variáveis
 
-O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Nomea-o-de-vari-veis-0a8484a8cdc743558d6677910590a874) consiste em aplicar os conhecimentos da aula nas variáveis e atributos de objetos do arquivo [01-nomenclatura-de-variaveis](ignite-clean-code-desafios-main/desafios/01-nomenclatura-de-variaveis.ts).
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Nomea-o-de-vari-veis-0a8484a8cdc743558d6677910590a874) consiste em aplicar os conhecimentos da aula anterior nas variáveis e atributos de objetos do arquivo [01-nomenclatura-de-variaveis](ignite-clean-code-desafios-main/desafios/01-nomenclatura-de-variaveis.ts).
 
 ### Código limpo em booleanos
 
@@ -94,6 +94,15 @@ Exemplo: `isButtonDisabled` vs. `isFormSubmitting`, o formulário sendo enviado 
 ### Desafio: Causa vs. Efeito
 
 O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Causa-vs-Efeito-a664fd5596c8467f9d5d66f3043ac9c5) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [03-causa-vs-efeito](ignite-clean-code-desafios-main/desafios/03-causa-vs-efeito.tsx).
+
+
+### Código em inglês
+
+É recomendado programar somente em inglês para manter o código acessível a todos, uma parcela dos desenvolvedores necessitam de leitores de tela para realizar seus trabalhos e esses programas ainda não capazes de interpretar 2 idiomas dentro do mesmo código, não é possível mudar os termos das linguagens de programação, bibliotecas, *frameworks*, etc., mas é possível mudar os termos de nossas variáveis e funções para inglês a fim de mantar o código legível a todos.
+
+### Desafio: Código em inglês
+
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-C-digo-em-ingl-s-ed988aa9dbf747a996d81b894327dfbd) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [04-codigo-em-ingles](ignite-clean-code-desafios-main/desafios/04-codigo-em-ingles.tsx).
 
 ## Código limpo no React
 
