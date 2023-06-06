@@ -13,8 +13,8 @@ Anotações a respeito do curso ***Clean Code*** da **[Rocketseat](https://www.r
 - [Código limpo com JavaScript](#código-limpo-com-javascript)
   - [Nomenclatura de variáveis](#nomenclatura-de-variáveis)
   - [Desafio: Nomeação de variáveis](#desafio-nomeação-de-variáveis)
-  - Código limpo em booleanos
-  - Deasfio: Booleanos
+  - [Código limpo em booleanos](#código-limpo-em-booleanos)
+  - [Deasfio: Booleanos](#desafio-código-limpo-em-booleanos)
   - Causa vs. Efeito
   - Desafio: Causa vs. Efeito
   - Código em inglês
@@ -74,6 +74,17 @@ Exemplos práticos no [arquivo](JavaScript/01_nomeclatura_variaveis.js).
 ### Desafio: Nomeação de variáveis
 
 O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Nomea-o-de-vari-veis-0a8484a8cdc743558d6677910590a874) consiste em aplicar os conhecimentos da aula nas variáveis e atributos de objetos do arquivo [01-nomenclatura-de-variaveis](ignite-clean-code-desafios-main/desafios/01-nomenclatura-de-variaveis.ts).
+
+### Código limpo em booleanos
+
+- Sempre escrever em forma de pergunta, exemplo: `isLoading`, `isEnabled`, `isClosed`.
+- Manter o mais semântico possível
+
+Exemplos práticos no [arquivo](JavaScript/02_booleanos.js).
+
+### Desafio: Código limpo em booleanos
+
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Booleanos-aaab19f8e0394d20ae135c30094a7a3c) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [02-booleanos](ignite-clean-code-desafios-main/desafios/02-booleanos.ts).
 
 ## Código limpo no React
 
