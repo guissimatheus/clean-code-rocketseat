@@ -5,15 +5,24 @@ const numberOfAbsensesToFailSchool = 100
 const studentNumberOfAbsenses = 109
 
 function checkIfStudentPassedTheSchoolYear() {
+  // if (studentGrade < necessaryGradeToBeApproved) {
+  //   return { error: true, message: 'Student was not approved because his grade was below the necessary.'}
+  // } else {
+  //   if(studentNumberOfAbsenses > numberOfAbsensesToFailSchool) {
+  //     return { error: true, message: 'Student was not approved because of his absenses'}
+  //   } else {
+  //     return { error: false, message: 'Student was approved :)'}
+  //   }
+  // }
   if (studentGrade < necessaryGradeToBeApproved) {
     return { error: true, message: 'Student was not approved because his grade was below the necessary.'}
-  } else {
-    if(studentNumberOfAbsenses > numberOfAbsensesToFailSchool) {
-      return { error: true, message: 'Student was not approved because of his absenses'}
-    } else {
-      return { error: false, message: 'Student was approved :)'}
-    }
   }
+
+  if(studentNumberOfAbsenses > numberOfAbsensesToFailSchool) {
+    return { error: true, message: 'Student was not approved because of his absenses.'}
+  } 
+  
+  return { error: false, message: 'Student was approved =D'}
 }
 
 console.log(checkIfStudentPassedTheSchoolYear())

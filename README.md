@@ -19,8 +19,8 @@ Anotações a respeito do curso ***Clean Code*** da **[Rocketseat](https://www.r
   - [Desafio: Causa vs. Efeito](#desafio-causa-vs-efeito)
   - [Código em inglês](#código-em-inglês)
   - [Desafio: Código em inglês](#desafio-código-em-inglês)
-  - Regras em condicionais
-  - Desafio: Regras em condicionais
+  - [Regras em condicionais](#regras-em-condicionais)
+  - [Desafio: Regras em condicionais](#desafio-regras-em-condicionais)
   - Parâmetros e desestruturação
   - Desafio: Parâmetros e desestruturação
   - Números mágicos
@@ -95,7 +95,6 @@ Exemplo: `isButtonDisabled` vs. `isFormSubmitting`, o formulário sendo enviado 
 
 O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Causa-vs-Efeito-a664fd5596c8467f9d5d66f3043ac9c5) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [03-causa-vs-efeito](ignite-clean-code-desafios-main/desafios/03-causa-vs-efeito.tsx).
 
-
 ### Código em inglês
 
 É recomendado programar somente em inglês para manter o código acessível a todos, uma parcela dos desenvolvedores necessitam de leitores de tela para realizar seus trabalhos e esses programas ainda não capazes de interpretar 2 idiomas dentro do mesmo código, não é possível mudar os termos das linguagens de programação, bibliotecas, *frameworks*, etc., mas é possível mudar os termos de nossas variáveis e funções para inglês a fim de mantar o código legível a todos.
@@ -103,6 +102,18 @@ O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Causa-vs-Efeito-a664
 ### Desafio: Código em inglês
 
 O [desafio](https://efficient-sloth-d85.notion.site/Desafio-C-digo-em-ingl-s-ed988aa9dbf747a996d81b894327dfbd) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [04-codigo-em-ingles](ignite-clean-code-desafios-main/desafios/04-codigo-em-ingles.tsx).
+
+### Regras em condicionais
+
+- Evite sempre que possível utilizar negações nas condições, pois pode atrapalhar o raciocínio quando envolve múltiplas condições
+- Prefira um `early return` a um `else`
+- Evite condicionais aninhadas, principalmente com operador ternário
+
+Exemplos práticos no [arquivo](JavaScript/05_condicionais.js).
+
+### Desafio: Regras em condicionais
+
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Regras-em-condicionais-d02ba76ad39e426f8f40bd49d25c0ebd) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [05-regras-em-condicionais](ignite-clean-code-desafios-main/desafios/05-regras-em-condicionais.ts).
 
 ## Código limpo no React
 
