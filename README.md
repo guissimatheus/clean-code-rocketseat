@@ -21,8 +21,8 @@ Anotações a respeito do curso ***Clean Code*** da **[Rocketseat](https://www.r
   - [Desafio: Código em inglês](#desafio-código-em-inglês)
   - [Regras em condicionais](#regras-em-condicionais)
   - [Desafio: Regras em condicionais](#desafio-regras-em-condicionais)
-  - Parâmetros e desestruturação
-  - Desafio: Parâmetros e desestruturação
+  - [Parâmetros e desestruturação](#parâmetros-e-desestruturação)
+  - [Desafio: Parâmetros e desestruturação](#desafio-parâmetros-e-desestruturação)
   - Números mágicos
   - Desafio: Números mágicos
   - Evite *Syntatic Sugars*
@@ -114,6 +114,17 @@ Exemplos práticos no [arquivo](JavaScript/05_condicionais.js).
 ### Desafio: Regras em condicionais
 
 O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Regras-em-condicionais-d02ba76ad39e426f8f40bd49d25c0ebd) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [05-regras-em-condicionais](ignite-clean-code-desafios-main/desafios/05-regras-em-condicionais.ts).
+
+### Parâmetros e desestruturação
+
+- Sempre que possível, enviar e receber parâmetros nomeados, utilizar a desestruturação
+- Prefira enviar e receber nas funções um objeto à múltiplos parâmetros, isto facilita uma futura refatoração
+
+Exemplos práticos no [arquivo](JavaScript/06_parametros_desestruturacao.js).
+
+### Desafio: Parâmetros e desestruturação
+
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Par-metros-e-Desestrutura-o-e7b4ac605bf9467da7b032573bc8adb9) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [06-parametros-e-desestruturacao](ignite-clean-code-desafios-main/desafios/06-parametros-e-desestruturacao.tsx).
 
 ## Código limpo no React
 
