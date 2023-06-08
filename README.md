@@ -73,7 +73,7 @@ Exemplos práticos no [arquivo](JavaScript/01_nomeclatura_variaveis.js).
 
 ### Desafio: Nomeação de variáveis
 
-O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Nomea-o-de-vari-veis-0a8484a8cdc743558d6677910590a874) consiste em aplicar os conhecimentos da aula anterior nas variáveis e atributos de objetos do arquivo [01-nomenclatura-de-variaveis](ignite-clean-code-desafios-main/desafios/01-nomenclatura-de-variaveis.ts).
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Nomea-o-de-vari-veis-0a8484a8cdc743558d6677910590a874) consiste em aplicar os conhecimentos da aula anterior nas variáveis e atributos de objetos do [arquivo](ignite-clean-code-desafios-main/desafios/01-nomenclatura-de-variaveis.ts).
 
 ### Código limpo em booleanos
 
@@ -84,7 +84,7 @@ Exemplos práticos no [arquivo](JavaScript/02_booleanos.js).
 
 ### Desafio: Código limpo em booleanos
 
-O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Booleanos-aaab19f8e0394d20ae135c30094a7a3c) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [02-booleanos](ignite-clean-code-desafios-main/desafios/02-booleanos.ts).
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Booleanos-aaab19f8e0394d20ae135c30094a7a3c) consiste em aplicar os conhecimentos da aula anterior nas variáveis do [arquivo](ignite-clean-code-desafios-main/desafios/02-booleanos.ts).
 
 ### Causa vs. Efeito
 
@@ -93,7 +93,7 @@ Exemplo: `isButtonDisabled` vs. `isFormSubmitting`, o formulário sendo enviado 
 
 ### Desafio: Causa vs. Efeito
 
-O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Causa-vs-Efeito-a664fd5596c8467f9d5d66f3043ac9c5) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [03-causa-vs-efeito](ignite-clean-code-desafios-main/desafios/03-causa-vs-efeito.tsx).
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Causa-vs-Efeito-a664fd5596c8467f9d5d66f3043ac9c5) consiste em aplicar os conhecimentos da aula anterior nas variáveis do [arquivo](ignite-clean-code-desafios-main/desafios/03-causa-vs-efeito.tsx).
 
 ### Código em inglês
 
@@ -101,7 +101,7 @@ O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Causa-vs-Efeito-a664
 
 ### Desafio: Código em inglês
 
-O [desafio](https://efficient-sloth-d85.notion.site/Desafio-C-digo-em-ingl-s-ed988aa9dbf747a996d81b894327dfbd) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [04-codigo-em-ingles](ignite-clean-code-desafios-main/desafios/04-codigo-em-ingles.tsx).
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-C-digo-em-ingl-s-ed988aa9dbf747a996d81b894327dfbd) consiste em aplicar os conhecimentos da aula anterior nas variáveis do [arquivo](ignite-clean-code-desafios-main/desafios/04-codigo-em-ingles.tsx).
 
 ### Regras em condicionais
 
@@ -113,7 +113,7 @@ Exemplos práticos no [arquivo](JavaScript/05_condicionais.js).
 
 ### Desafio: Regras em condicionais
 
-O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Regras-em-condicionais-d02ba76ad39e426f8f40bd49d25c0ebd) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [05-regras-em-condicionais](ignite-clean-code-desafios-main/desafios/05-regras-em-condicionais.ts).
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Regras-em-condicionais-d02ba76ad39e426f8f40bd49d25c0ebd) consiste em aplicar os conhecimentos da aula anterior nas variáveis do [arquivo](ignite-clean-code-desafios-main/desafios/05-regras-em-condicionais.ts).
 
 ### Parâmetros e desestruturação
 
@@ -124,17 +124,22 @@ Exemplos práticos no [arquivo](JavaScript/06_parametros_desestruturacao.js).
 
 ### Desafio: Parâmetros e desestruturação
 
-O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Par-metros-e-Desestrutura-o-e7b4ac605bf9467da7b032573bc8adb9) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [06-parametros-e-desestruturacao](ignite-clean-code-desafios-main/desafios/06-parametros-e-desestruturacao.tsx).
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Par-metros-e-Desestrutura-o-e7b4ac605bf9467da7b032573bc8adb9) consiste em aplicar os conhecimentos da aula anterior nas variáveis do [arquivo](ignite-clean-code-desafios-main/desafios/06-parametros-e-desestruturacao.tsx).
 
 ### Números mágicos
 
 Números mágicos são cálculos colocados no código que não deixam claro seu significado à primeira vista, por exemplo, cálculo de tempo, datas, intervalos.
 
+Sugestões:
+- Explicitar os cálculos
+- Incluir um comentário "traduzindo" o valor para um dado do mundo real
+- Armazenar esse valor em uma variável cujo nome explique seu significado
+
 Exemplos práticos no [arquivo](JavaScript/07_numeros_magicos.js).
 
 ### Desafio: Números mágicos
 
-O [desafio](https://efficient-sloth-d85.notion.site/Desafio-N-meros-M-gicos-ca206dedc5e3436cb09b86658002de00) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [07-numeros-magicos](ignite-clean-code-desafios-main/desafios/07-numeros-magicos.js).
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-N-meros-M-gicos-ca206dedc5e3436cb09b86658002de00) consiste em aplicar os conhecimentos da aula anterior nas variáveis do [arquivo](ignite-clean-code-desafios-main/desafios/07-numeros-magicos.js).
 
 ## Código limpo no React
 
