@@ -1,6 +1,6 @@
 # *Clean Code*
 
-Anotações a respeito do curso ***Clean Code***, foco em **clean code** prático, da **[Rocketseat](https://www.rocketseat.com.br/ "Página oficial")**, ministrado por **[Diego Fernandes](https://www.linkedin.com/in/diego-schell-fernandes/ "Perfil no LinkedIn")**, com duração total das videoaulas de aproximadamente 3h30.
+Anotações a respeito do curso ***Clean Code*** da **[Rocketseat](https://www.rocketseat.com.br/ "Página Oficial")**, com foco em **clean code** prático e duração total das videoaulas de aproximadamente 3h30, ministrado por **[Diego Fernandes](https://www.linkedin.com/in/diego-schell-fernandes/ "Perfil no LinkedIn")**.
 
 [Repositório](https://github.com/rocketseat-education/ignite-clean-code-desafios) dos desafios.
 
