@@ -1,5 +1,7 @@
-// Desafio: Nomenclatura de variáveis
-// Os comentários são as linhas de código originais
+/**
+ * Desafio: Nomenclatura de variáveis
+ * Os comentários são as linhas de código originais
+ */
 
 // const list = [
 const categoriesList = [

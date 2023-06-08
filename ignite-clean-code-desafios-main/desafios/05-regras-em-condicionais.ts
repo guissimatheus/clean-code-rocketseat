@@ -1,3 +1,8 @@
+/**
+ * Desafio: Regras em condicionais
+ * Os comentários são as linhas de código originais
+ */
+
 const necessaryGradeToBeApproved = 7
 const studentGrade = 10
 

@@ -1,5 +1,7 @@
-// Desafio: Código limpo em booleanos
-// Os comentários são as linhas de código originais
+/**
+ * Desafio: Código limpo em booleanos
+ * Os comentários são as linhas de código originais
+ */
 
 const user = {
   // name: 'Diego Fernandes',

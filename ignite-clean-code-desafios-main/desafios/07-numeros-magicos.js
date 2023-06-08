@@ -1,3 +1,8 @@
+/**
+ * Desafio: Números mágicos
+ * Os comentários são as linhas de código originais
+ */
+
 function lookForUpdades() {}
 
 // setInterval(lookForUpdades, 60 * 30 * 1000)

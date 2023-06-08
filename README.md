@@ -25,6 +25,8 @@ Anotações a respeito do curso ***Clean Code*** da **[Rocketseat](https://www.r
   - [Desafio: Parâmetros e desestruturação](#desafio-parâmetros-e-desestruturação)
   - [Números mágicos](#números-mágicos)
   - [Desafio: Números mágicos](#desafio-números-mágicos)
+  - [Comentários vs Documentação](#comentários-vs-documentação)
+  - [Desafio: Comentários vs Documentação](#desafio-comentários-vs-documentação)
   - Evite *Syntatic Sugars*
   - Desafio: Evite *Syntatic Sugars*
 - Código limpo no React
@@ -140,6 +142,18 @@ Exemplos práticos no [arquivo](JavaScript/07_numeros_magicos.js).
 ### Desafio: Números mágicos
 
 O [desafio](https://efficient-sloth-d85.notion.site/Desafio-N-meros-M-gicos-ca206dedc5e3436cb09b86658002de00) consiste em aplicar os conhecimentos da aula anterior nas variáveis do [arquivo](ignite-clean-code-desafios-main/desafios/07-numeros-magicos.js).
+
+### Comentários vs. Documentação
+
+O comentário não serve para explicar o funcionamento de algo, isto é responsabilidade da Documentação.
+
+O comentário serve como um aviso ao próximo desenvolvedor do motivo daquele código ter sido escrito daquela forma, seja por alguma limitação/problema de biblioteca ou para avisar de uma padrão diferente de escrita.
+
+Exemplos práticos no [arquivo](JavaScript/07_numeros_magicos.js).
+
+### Desafio: Comentários vs. Documentação
+
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Coment-rios-vs-Documenta-o-6660d7d60c884b91b0f76de6c6b8ecde) consiste em aplicar os conhecimentos da aula anterior nas variáveis do [arquivo](ignite-clean-code-desafios-main/desafios/08-comentarios-vs-documentacao.js).
 
 ## Código limpo no React
 

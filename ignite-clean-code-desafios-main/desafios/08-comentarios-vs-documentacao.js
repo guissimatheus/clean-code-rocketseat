@@ -1,3 +1,9 @@
+/**
+ * Desafio: Números mágicos
+ * O único comentário correto abaixo é o que fala sobre a incompatibidade no formato da imagem
+ * Todos os outros comentários estão fazendo papel de uma documentação 
+ */
+
 // Essa função tem o objetivo de registrar um novo usuário no banco.
 async function register(data) {
   // Desestrutura os dados recebidos.

@@ -1,5 +1,7 @@
-// Desafio: Código em inglês
-// Os comentários são as linhas de código originais
+/**
+ * Desafio: Código em inglês
+ * Os comentários são as linhas de código originais
+ */
 
 import { useState } from "react"
 
