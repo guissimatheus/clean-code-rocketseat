@@ -23,8 +23,8 @@ Anotações a respeito do curso ***Clean Code*** da **[Rocketseat](https://www.r
   - [Desafio: Regras em condicionais](#desafio-regras-em-condicionais)
   - [Parâmetros e desestruturação](#parâmetros-e-desestruturação)
   - [Desafio: Parâmetros e desestruturação](#desafio-parâmetros-e-desestruturação)
-  - Números mágicos
-  - Desafio: Números mágicos
+  - [Números mágicos](#números-mágicos)
+  - [Desafio: Números mágicos](#desafio-números-mágicos)
   - Evite *Syntatic Sugars*
   - Desafio: Evite *Syntatic Sugars*
 - Código limpo no React
@@ -125,6 +125,16 @@ Exemplos práticos no [arquivo](JavaScript/06_parametros_desestruturacao.js).
 ### Desafio: Parâmetros e desestruturação
 
 O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Par-metros-e-Desestrutura-o-e7b4ac605bf9467da7b032573bc8adb9) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [06-parametros-e-desestruturacao](ignite-clean-code-desafios-main/desafios/06-parametros-e-desestruturacao.tsx).
+
+### Números mágicos
+
+Números mágicos são cálculos colocados no código que não deixam claro seu significado à primeira vista, por exemplo, cálculo de tempo, datas, intervalos.
+
+Exemplos práticos no [arquivo](JavaScript/07_numeros_magicos.js).
+
+### Desafio: Números mágicos
+
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-N-meros-M-gicos-ca206dedc5e3436cb09b86658002de00) consiste em aplicar os conhecimentos da aula anterior nas variáveis do arquivo [07-numeros-magicos](ignite-clean-code-desafios-main/desafios/07-numeros-magicos.js).
 
 ## Código limpo no React
 
