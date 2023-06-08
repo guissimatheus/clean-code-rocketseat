@@ -149,11 +149,23 @@ O comentário não serve para explicar o funcionamento de algo, isto é responsa
 
 O comentário serve como um aviso ao próximo desenvolvedor do motivo daquele código ter sido escrito daquela forma, seja por alguma limitação/problema de biblioteca ou para avisar de uma padrão diferente de escrita.
 
-Exemplos práticos no [arquivo](JavaScript/07_numeros_magicos.js).
+Exemplos práticos no [arquivo](JavaScript/08_comentarios_documentacao.js).
 
 ### Desafio: Comentários vs. Documentação
 
 O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Coment-rios-vs-Documenta-o-6660d7d60c884b91b0f76de6c6b8ecde) consiste em aplicar os conhecimentos da aula anterior nas variáveis do [arquivo](ignite-clean-code-desafios-main/desafios/08-comentarios-vs-documentacao.js).
+
+### Evite Syntatic Sugars
+
+*Syntatic Sugars* são estruturas/funcionalidades que geralmente são muito específicas à determinada linguagem, por exemplo, a desestruturação e o *spread operator* (...) do JavaScript, ou métodos de conversão de tipo de variáveis.
+
+O recomendado é utilizar soluções "genéricas" quando possível, desde que não aumente a complexidade do código e nem diminua sua produtividade, porque dessa forma o próximo programador não necessitaria de um alto grau de conhecimento da linguagem para entender e fazer a manutenção do código.
+
+Exemplos práticos no [arquivo](JavaScript/09_syntatic_sugars).
+
+### Desafio: Evite Syntatic Sugars
+
+O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Syntatic-Sugars-7400d576da8e4d98968e1523ad7efcef) consiste em aplicar os conhecimentos da aula anterior nas variáveis do [arquivo](ignite-clean-code-desafios-main/desafios/09-syntatic-sugars.ts).
 
 ## Código limpo no React
 
