@@ -30,9 +30,9 @@ Anotações a respeito do curso ***Clean Code*** da **[Rocketseat](https://www.r
   - [Evite *Syntatic Sugars*](#evite-syntatic-sugars)
   - [Desafio: Evite *Syntatic Sugars*](#desafio-evite-syntatic-sugars)
 - [Código limpo no React](#código-limpo-no-react)
-  - Desacoplando componentes
-  - Componentes puros
-  - Funções e eventos no React
+  - [Desacoplando componentes](#desacoplando-componentes)
+  - [Componentes puros](#componentes-puros)
+  - [Funções e eventos no React](#funções-e-eventos-no-react)
   - Composição vs. Customização
   - Condicionais no *render*
 - [Código limpo no Node.js](#código-limpo-no-nodejs)
@@ -179,5 +179,35 @@ Exemplos práticos no [arquivo](JavaScript/09_syntatic_sugars).
 O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Syntatic-Sugars-7400d576da8e4d98968e1523ad7efcef) consiste em aplicar os conhecimentos da aula anterior nas variáveis do [arquivo](ignite-clean-code-desafios-main/desafios/09-syntatic-sugars.ts).
 
 ## Código limpo no React
+
+Criei um projeto de exemplo na pasta **[example](React/example/)** contendo comentários em seus arquivos e componentes explicando os motivos da refatoração.
+
+### Desacoplando componentes
+
+Como identificar que um componente precisa de uma refatoração?  
+Quando a sua camada de JavaScript estiver muito grande e complexa. 
+
+Quando separar um componente em componentes menores?
+1. **Quando se tem algo repetitivo:**  
+Analisar necessidade de separação, muitas vezes não é necessário quando a estrutura se repete, mas não tem nenhuma lógica envolvida, essa análise evita o excesso de componentização em um projeto.
+
+2. **Quando é possível isolar algo do seu contexto, sem prejudicar o comportamento original:**  
+Quando existe alguma variável, função, `useEffect`, etc. que está totalmente associado à uma parte específica da interface. 
+
+### Componentes puros
+
+Quando se separa um componente em outros menores, é muito comum que se leve toda a lógica do *script* para o componente novo e às vezes essa lógica depende de comunicação com API/*back-end*, `useEffect()` em variáveis do componente pai, entre outros, nesses casos o componente criado não é um componente puro e sim um componente separado em dois arquivos.
+
+Componente puro é um tipo de componente cuja existência não depende do contexto em que está, ele tem autonomia de funcionamento sem precisar de informações externas, desde que respeitadas suas propriedades.
+
+Exemplo: o **Header** de uma aplicação contém um botão com uma função que adiciona uma nota em uma lista de notas, para ele se tornar um componente puro o correto seria criar uma *interface* que recebe justamente esta função a ser utilizada, assim o **Header** pode exister em qualquer outro contexto da aplicação desde que seja passado alguma função para ser executada no botão.
+
+### Funções e eventos no React
+
+Recomendação de prefixos para nomes de funções: `handle` e `on`.
+
+Quando o componente está expondo algum evento a outro componente, prefira utilzar o prefixo **`on`**, semelhante aos efeitos do HTML `onClick`, `onFocus`, exemplos: `onSubmitForm()`, `onCreateNewUser()`.
+
+Quando o objetivo da função é responder o disparo de um algum evento do usuário, prefira utilzar o prefixo **`handle`**, exemplos: `handleSubmitForm()`, `handleCreateNewUser()`.
 
 ## Código limpo no Node.js
