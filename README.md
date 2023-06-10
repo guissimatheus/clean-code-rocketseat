@@ -210,4 +210,6 @@ Quando o componente está expondo algum evento a outro componente, prefira utilz
 
 Quando o objetivo da função é responder o disparo de um algum evento do usuário, prefira utilzar o prefixo **`handle`**, exemplos: `handleSubmitForm()`, `handleCreateNewUser()`.
 
+Exemplo prático e mais claro com as funções: `handleCreateNewNote` e `onCreateNewNote` nos arquivos [App.tsx](React/example/src/App.tsx) e [Header.tsx](React/example/src/components/Header.tsx) respectivamente.
+
 ## Código limpo no Node.js
