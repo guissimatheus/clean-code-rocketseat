@@ -27,10 +27,21 @@ Anotações a respeito do curso ***Clean Code*** da **[Rocketseat](https://www.r
   - [Desafio: Números mágicos](#desafio-números-mágicos)
   - [Comentários vs Documentação](#comentários-vs-documentação)
   - [Desafio: Comentários vs Documentação](#desafio-comentários-vs-documentação)
-  - Evite *Syntatic Sugars*
-  - Desafio: Evite *Syntatic Sugars*
-- Código limpo no React
-- Código limpo no Node.js
+  - [Evite *Syntatic Sugars*](#evite-syntatic-sugars)
+  - [Desafio: Evite *Syntatic Sugars*](#desafio-evite-syntatic-sugars)
+- [Código limpo no React](#código-limpo-no-react)
+  - Desacoplando componentes
+  - Componentes puros
+  - Funções e eventos no React
+  - Composição vs. Customização
+  - Condicionais no *render*
+- [Código limpo no Node.js](#código-limpo-no-nodejs)
+  - *Clean code* no *back-end*
+  - Princípios de SOLID
+  - Exemplos práticos de SOLID
+  - Princípios de DDD
+  - Exemplo prático de DDD
+  - Unindo DDD ao SOLID
 
 </details>
 
