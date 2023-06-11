@@ -27,9 +27,9 @@ export function App() {
       <main>
         <section>
           {/*
-            Essas estruturas das divs se repetem, mas no momento não há nenhuma lógica envolvida
-            Portanto não é recomendado criar componentes neste caso
-          */}
+            * Essas estruturas das divs se repetem, mas no momento não há nenhuma lógica envolvida
+            * Portanto não é recomendado criar componentes neste caso
+            */}
           <div>
             <h3>Div 1</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae modi dolorem fugiat error molestiae, voluptatem deserunt corporis! Hic quibusdam incidunt, a laudantium dolorem unde commodi odit doloremque ut illum error!</p>
@@ -45,7 +45,11 @@ export function App() {
         <h2>Notes list</h2>
           <ul>
             { 
-              !notes.length 
+              /**
+               * Evite condicionais no render,
+               * Prefira defini-las na camada do JavaScript
+               */
+              notes.length == 0 
               ? <li>Empty notes list</li> 
               : notes.map(note => <li key={ note }>{ note }</li>)
             }

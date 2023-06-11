@@ -5,6 +5,9 @@ import { Header } from './components/Header'
 export function App() {
 	const [notes, setNotes] = useState<string[]>([])
 
+	// Condicional na camada JS
+	const isNoteListEmpty = notes.length == 0
+
 	function handleCreateNewNote() {
 		// Cria nova nota
 	}
@@ -31,7 +34,9 @@ export function App() {
 				<h2>Notes list</h2>
 				<ul>
 				{
-					!notes.length 
+					// notes.length == 0 
+					// Condicional foi definida na camada JavaScript
+					isNoteListEmpty
 					? <li>Empty notes list</li> 
 					: notes.map(note => <li key={ note }>{ note }</li>)
 				}

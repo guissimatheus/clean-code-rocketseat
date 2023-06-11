@@ -33,8 +33,8 @@ Anotações a respeito do curso ***Clean Code*** da **[Rocketseat](https://www.r
   - [Desacoplando componentes](#desacoplando-componentes)
   - [Componentes puros](#componentes-puros)
   - [Funções e eventos no React](#funções-e-eventos-no-react)
-  - Composição vs. Customização
-  - Condicionais no *render*
+  - [Composição vs. Customização](#composição-vs-customização)
+  - [Condicionais no *render*](#condicionais-no-render)
 - [Código limpo no Node.js](#código-limpo-no-nodejs)
   - *Clean code* no *back-end*
   - Princípios de SOLID
@@ -211,5 +211,13 @@ Quando o componente está expondo algum evento a outro componente, prefira utilz
 Quando o objetivo da função é responder o disparo de um algum evento do usuário, prefira utilzar o prefixo **`handle`**, exemplos: `handleSubmitForm()`, `handleCreateNewUser()`.
 
 Exemplo prático e mais claro com as funções: `handleCreateNewNote` e `onCreateNewNote` nos arquivos [App.tsx](React/example/src/App.tsx) e [Header.tsx](React/example/src/components/Header.tsx) respectivamente.
+
+### Composição vs. Customização
+
+### Condicionais no *render*
+
+Evite condicionais na camada HTML de seu código, prefira criar variáveis com o condicional na camada JavaScript.
+
+Exemplo: variável `isNoteListEmpty` no arquivo [App.tsx](React/example/src/App.tsx).
 
 ## Código limpo no Node.js
