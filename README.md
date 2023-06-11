@@ -1,6 +1,6 @@
 # *Clean Code*
 
-Anotações a respeito do curso ***Clean Code*** da **[Rocketseat](https://www.rocketseat.com.br/ "Página Oficial")**, com foco em **clean code** prático e duração total das videoaulas de aproximadamente 3h30, ministrado por **[Diego Fernandes](https://www.linkedin.com/in/diego-schell-fernandes/ "Perfil no LinkedIn")**.
+Anotações a respeito do [curso](https://lp.rocketseat.com.br/programas-rocketseat) ***Clean Code*** da **[Rocketseat](https://www.rocketseat.com.br/ "Página Oficial")**, com foco em **clean code** prático e duração total das videoaulas de aproximadamente 3h30, ministrado por **[Diego Fernandes](https://www.linkedin.com/in/diego-schell-fernandes/ "Perfil no LinkedIn")**.
 
 [Repositório](https://github.com/rocketseat-education/ignite-clean-code-desafios) dos desafios.
 
@@ -180,7 +180,7 @@ O [desafio](https://efficient-sloth-d85.notion.site/Desafio-Syntatic-Sugars-7400
 
 ## Código limpo no React
 
-Criei um projeto de exemplo na pasta **[example](React/example/)** contendo comentários em seus arquivos e componentes explicando os motivos da refatoração.
+Criei um projeto simples, com auxílio do [Vite](https://vitejs.dev/guide/ "Documentação") na pasta **[example](React/example/)** para servir de exemplo às anotações, contendo comentários em seus arquivos e componentes explicando os motivos da refatoração.
 
 ### Desacoplando componentes
 
