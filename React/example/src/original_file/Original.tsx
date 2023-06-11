@@ -19,7 +19,7 @@ export function App() {
         <h2>Course: Clean Code</h2>
         <p>By Rocketseat</p>
         
-        <h3>Today is: { currentDate }</h3>
+        <h3>Today is: {currentDate}</h3>
 
         <button onClick={() => {}}>This button do nothing</button>
       </header>
@@ -55,7 +55,7 @@ export function App() {
       <hr />
       
       <footer>
-        Copyright &copy; Matheus Guissi { currentYear }
+        Copyright &copy; Matheus Guissi {currentYear}
       </footer>
     </div>
   )

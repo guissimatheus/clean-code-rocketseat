@@ -21,10 +21,10 @@ export function Header({ onCreateNewNote }: HeaderProps) {
         <h2>Course: Clean Code</h2>
         <p>By Rocketseat</p>
 
-        <h3>Today is: { currentDate }</h3>
+        <h3>Today is: {currentDate}</h3>
 
-        <button onClick={ onCreateNewNote }>This button do nothing</button>
-        {/* <button onClick={ createNote }>This button do nothing</button> */}
+        <button onClick={onCreateNewNote}>This button do nothing</button>
+        {/* <button onClick={createNote}>This button do nothing</button> */}
 
     </header>
     )

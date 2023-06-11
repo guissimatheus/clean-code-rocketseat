@@ -12,7 +12,7 @@ export function App() {
 	return (
 		<div>
 			{/* Por conta da passagem da função, o componente Header é um componente puro */}
-			<Header onCreateNewNote={ handleCreateNewNote }/>
+			<Header onCreateNewNote={handleCreateNewNote}/>
 
 			<main>
 				<section>
@@ -30,7 +30,7 @@ export function App() {
 
 				<h2>Notes list</h2>
 				<ul>
-				{ 
+				{
 					!notes.length 
 					? <li>Empty notes list</li> 
 					: notes.map(note => <li key={ note }>{ note }</li>)
@@ -40,6 +40,7 @@ export function App() {
 			
 			<hr />
 
+			{/* Toda a lógica foi passada pra dentro do componente Footer */}
 			<Footer />
 		</div>
 	)

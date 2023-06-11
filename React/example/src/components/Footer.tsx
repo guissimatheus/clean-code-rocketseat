@@ -3,7 +3,7 @@ export function Footer() {
 
     return (
     <footer>
-        Copyright &copy; Matheus Guissi { currentYear }
+        Copyright &copy; Matheus Guissi {currentYear}
     </footer>
     )
 }
