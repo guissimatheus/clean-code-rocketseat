@@ -214,6 +214,14 @@ Exemplo prático e mais claro com as funções: `handleCreateNewNote` e `onCreat
 
 ### Composição vs. Customização
 
+É muito comum durante a criação de componentes de Input que se definam configurações deste componente, como *label*, tipo, mensagem de erro, classe CSS, etc., essas propriedades podem ser obrigatórias ou opcionais e são recebidas pelo componente através de uma interface.
+
+O problema em se fazer isso é que a estrutura do HTML acaba ficando engessada e de difícil expansão, por exemplo, caso no futuro eu precise customizar ainda mais esse *input*, adicionar um ícone ou que a mensagem de erro venha acima da *label* ou trocar o ícone de lado, o componente vai precisar receber ainda mais propriedades e criar casos condicionais de renderização, tornando um processo complexo.
+
+A solução encontrada para isso é utilizar o *pattern* de composição, onde o componente-pai engloba os componentes-filhos, então o componente Input poderia ser divido em Label, Icon, InputField, etc., a disposição deles no HTML pode ser feita de forma mais fluída de acordo com a chamada dos respectivos componentes dentro do componente-pai.
+
+Exemplo prático e mais claro ao analisar os arquivos [Input.old.tsx](React/example/src/components/Input.old.tsx) e [Input.tsx](React/example/src/components/Input.tsx) e as chamadas de seus componentes no arquivo [App.tsx](React/example/src/App.tsx).
+
 ### Condicionais no *render*
 
 Evite condicionais na camada HTML de seu código, prefira criar variáveis com o condicional na camada JavaScript.
