@@ -36,8 +36,8 @@ Anotações a respeito do [curso](https://lp.rocketseat.com.br/programas-rockets
   - [Composição vs. Customização](#composição-vs-customização)
   - [Condicionais no *render*](#condicionais-no-render)
 - [Código limpo no Node.js](#código-limpo-no-nodejs)
-  - *Clean code* no *back-end*
-  - Princípios de SOLID
+  - [*Clean code* no *back-end*](#clean-code-no-back-end)
+  - [Princípios de SOLID](#princípios-de-solid)
   - Exemplos práticos de SOLID
   - Princípios de DDD
   - Exemplo prático de DDD
@@ -229,3 +229,38 @@ Evite condicionais na camada HTML de seu código, prefira criar variáveis com o
 Exemplo: variável `isNoteListEmpty` no arquivo [App.tsx](React/example/src/App.tsx).
 
 ## Código limpo no Node.js
+
+### *Clean code* no *back-end*
+
+*Clean code* no *back-end* não depende se a aplicação foi desenvolvida com *Clean Architeure*, DDD (*Domain Driven Design*), SOLID ou *frameworks*, etc. 
+
+O objetivo é ter uma aplicação muito bem estruturada, definida e principalmente com diversos testes automatizados que auxliam no desenvolvimento do sistema para garantir que a aplicação continue funcionando corretamente mesmo com novas *features* e refatorações sendo feitas.
+
+Foco principal:
+- Manter os testes simples
+- Testes que cubram quase toda a aplicação
+
+### Princípios de SOLID
+
+- **S**RP - ***S**ingle Responsability Principle*
+- **O**CP - ***O**pen/Close Principle*
+- **L**SP - ***L**iskov Substitution Principle*
+- **I**SP - ***I**nterface Segregation Principle*
+- **D**IP - ***D**ependency Inversion Principle*
+
+Na prática é quase impossível separar totalmente um princípio do outro.
+
+**SRP:** cada classe, entidade, serviço, método, caso de uso, em suma, cada parte da aplicação deve ser responsável por uma única ação.  
+Exemplo que fere o princípio: um método que cria um usuário **E** envia um *e-mail* para este usuário, o correto seriam funções separadas.
+
+**OCP:** as classes/entidades devem estar sempre "abertas" a extensão/inclusão de novos métodos, mas nunca permitir a modificação de um já existente.  
+Exemplo que fere o princípio: uma classe com uma função que calcula valor de frete de forma diferente de acordo com as transportadoras, caso a empresa faça um contrato com uma nova transportadora, será preciso **alterar** a classe e adicionar mais um condicional, o correto seria estendar a classe para permitir esta nova transportadora.
+
+**LSP:** deve ser possível substituir uma dependência de uma classe por outra desde que elas possuam o mesmo formato.
+Exemplo que respeita o princípio: uma função que envia os dados de criação de um usuário para um repositório do banco PostgreSQL deve continuar funcionando caso troque o repositório para um do MySQL, a função não é responsável por mandar um formato específico de dados para cada banco.
+
+**ISP:** instrui a separação de interfaces de classes.  
+Exemplo que fere o princípio: uma classe Impressora com uma interface com os métodos de imprimir e escanear, pode ocorrer de uma impressora mais simples não possuir a função de escanear, então não seria possível utilizar essa interface, o correto seria separar cada método em uma interface e aí sim a classe Impressa implementar as duas interfaces.
+
+**DIP:** as dependências de uma classe devem ser injetadas de maneira inversa ao modelo tradicional, ou seja, a função deve receber como parâmetros as suas depêndencias.
+Exemplo que fere o princípio: em um arquivo, temos um `import` de um repositório, uma função `createUser()` utiliza o objeto desse repositório para executar a função `createUserInDatabase()`, o correto é declarar a função `createUser()` para receber uma função como parâmetro e depois passar a função `createUserInDatabase()` para ela.
