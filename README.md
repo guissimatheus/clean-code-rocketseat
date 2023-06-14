@@ -38,7 +38,7 @@ Anotações a respeito do [curso](https://lp.rocketseat.com.br/programas-rockets
 - [Código limpo no Node.js](#código-limpo-no-nodejs)
   - [*Clean code* no *back-end*](#clean-code-no-back-end)
   - [Princípios de SOLID](#princípios-de-solid)
-  - Exemplos práticos de SOLID
+  - [Exemplos práticos de SOLID](#exemplo-prático-de-solid)
   - Princípios de DDD
   - Exemplo prático de DDD
   - Unindo DDD ao SOLID
@@ -264,3 +264,9 @@ Exemplo que fere o princípio: uma classe Impressora com uma interface com os m�
 
 **DIP:** as dependências de uma classe devem ser injetadas de maneira inversa ao modelo tradicional, ou seja, a função deve receber como parâmetros as suas depêndencias.
 Exemplo que fere o princípio: em um arquivo, temos um `import` de um repositório, uma função `createUser()` utiliza o objeto desse repositório para executar a função `createUserInDatabase()`, o correto é declarar a função `createUser()` para receber uma função como parâmetro e depois passar a função `createUserInDatabase()` para ela.
+
+### Exemplo prático de SOLID
+
+Exemplo prático nos arquivos **[solid.old.ts](/Back-end/solid.old.ts)** e **[solid.ts](/Back-end/solid.ts)**, o arquivo **solid.old.ts** contém uma versão inicial das classes/funções enquanto o o arquivo **solid.ts** contém a versão refatorada se baseando nos princípios SOLID.
+
+Contextualização: obter desconto de um pedido de acordo com o modo de pagamento.
