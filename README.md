@@ -39,7 +39,7 @@ Anotações a respeito do [curso](https://lp.rocketseat.com.br/programas-rockets
   - [*Clean code* no *back-end*](#clean-code-no-back-end)
   - [Princípios de SOLID](#princípios-de-solid)
   - [Exemplos práticos de SOLID](#exemplo-prático-de-solid)
-  - Princípios de DDD
+  - [Princípios de DDD](#princípios-de-ddd)
   - Exemplo prático de DDD
   - Unindo DDD ao SOLID
 
@@ -270,3 +270,37 @@ Exemplo que fere o princípio: em um arquivo, temos um `import` de um repositór
 Exemplo prático nos arquivos **[solid.old.ts](/Back-end/solid.old.ts)** e **[solid.ts](/Back-end/solid.ts)**, o arquivo **solid.old.ts** contém uma versão inicial das classes/funções enquanto o o arquivo **solid.ts** contém a versão refatorada se baseando nos princípios SOLID.
 
 Contextualização: obter desconto de um pedido de acordo com o modo de pagamento.
+
+### Princípios de DDD
+
+DDD (*Domain-Driven Design*) é uma prática de pensar/desenhar como será o *software*, quais entidades serão necessárias, possíveis casos de usos, etc.
+
+*Domain* é o ambiente/contexto do problema de negócio que está sendo resolvido e ele pode ser composto por múltiplos sub-domínios, a partir da definição dos sub-domínios é possível encontrar as entidades e consequentemente os casos de uso do sistema.
+
+*Domain Experts* são pessoas especialistas naquele domínio onde está situado o problema. O engenheiro de *software* vai conversar com esses especialistas e a partir disto irá identificar quais são as possíveis entidades, atores, de cada sub-domínio.
+
+Uma possível entidade pode ser identificada em múltiplos sub-domínios diferentes, porém a nível de código/desenvolvimento ela pode, sem nenhum problema, assumir nomes diferentes e ser considerada como entidades diferentes para evitar o uso de um nome genêrico que não deixa claro a finalidade daquela entidade em um longo fluxo de código.
+
+**Exemplo - Criação de um *e-commerce***
+
+- Domínio: *e-commerce*
+- Subdomínios:
+  - Logística
+  - Faturamento
+  - Pagamento
+  - Estoque
+  - outros...
+
+Possível conversa com um *domain expert* em Faturamento:
+- Pergunta: como é o dia de trabalho?
+- Resposta: a gente ***lista*** as ***ordens de pedido*** e ***emite*** as ***notas fiscais***.
+
+A partir dessa fala, é possível identificar rapidamente:
+- Prováveis entidades:
+  - Ordem de Pedido
+  - Nota Fiscal
+- Prováveis casos de uso:
+  - Listar ordens de pedido
+  - Emitir notas fiscais
+
+Uma possível entidade Usuário do *e-commerce* pode assumir nomes/estruturas diferentes dependendo do subdomínio no qual está inserido, no subdomínio Faturamento o usuário passa a ser definido como "Comprador", já na parte de Logística ele é considerado como "Destinatário".
