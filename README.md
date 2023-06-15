@@ -40,7 +40,7 @@ Anotações a respeito do [curso](https://lp.rocketseat.com.br/programas-rockets
   - [Princípios de SOLID](#princípios-de-solid)
   - [Exemplos práticos de SOLID](#exemplo-prático-de-solid)
   - [Princípios de DDD](#princípios-de-ddd)
-  - Exemplo prático de DDD
+  - [Exemplo prático de DDD](#exemplo-prático-de-ddd)
   - Unindo DDD ao SOLID
 
 </details>
@@ -304,3 +304,23 @@ A partir dessa fala, é possível identificar rapidamente:
   - Emitir notas fiscais
 
 Uma possível entidade Usuário do *e-commerce* pode assumir nomes/estruturas diferentes dependendo do subdomínio no qual está inserido, no subdomínio Faturamento o usuário passa a ser definido como "Comprador", já na parte de Logística ele é considerado como "Destinatário".
+
+### Exemplo prático de DDD
+
+Utilizando o contexto citado acima de *e-commerce*, a pasta [ddd](/Back-end/ddd/) foi criada para servir como um exemplo prático.
+
+Na teoria, o processo de desenvolvimento de uma aplicação deveria ser pensado totalmente desconectado de um banco de dados, o sistema deveria ser capaz de validar as regras de negócios e executar os testes automatizados com sucesso sem a necessidade de um banco de dados e de nenhuma dependência externa.
+
+As classes/entidades *Customer* e *Recipient* poderiam ser armazenadas numa mesma tabela dentro do banco de dados, já que suas informações são relativas a mesma pessoa.
+
+### Unindo DDD ao SOLID
+
+O exemplo anterior criado na pasta [ddd](/Back-end/ddd/) foi expandido levando em consideração os princípios SOLID e o desenvolvimento da camada de infraestrutura de como aplicação vai se comunicar com o mundo externo: *frameworks*, banco de dados, APIs, etc.
+
+Analisando a classe [**SubmitOrder**](Back-end/ddd/use-cases/submit-order.ts) é possível perceber que o sistema consegue fazer toda a validação de regras de negócios com os dados recebidos antes que seja feita a persistência dos dados em algum banco de dados. A classe foi desenvolvida respeitando o princípio DIP do SOLID, onde o construtor da classe recebe a depêndencia necessária para executação de seus métodos.
+
+A interface [**OrdersRepository**](Back-end/ddd/repositories/orders-repository.ts) foi criada levando em consideração o princípio OCP do SOLID, caso o sistema utilize um banco diferente ao MySQL e Postgres, basta criar uma classe que implemente essa interface, não é necessário modificá-la.
+
+No arquivo [**server.ts**](Back-end/ddd/server.ts) é possível notar que devido a classe **SubmitOrder** e a interface **OrdersRepository** terem sido desenvolvidas com base nos princípios SOLID, as classes **MySqlOrdersRepository** e **PostgresOrdersRepository** podem ser usadas como dependência da classe **SubmitOrder** sem distinção alguma, respeitando assim o princípio LSP.
+
+Na vídeo-aula não teve nenhuma implementação prática de testes automatizados, mas seria possível garantir o funcionamento do sistema por meio deles e sem um banco de dados desde que se crie uma classe/função para testes que implemente a interface **OrdersRepository** e seus métodos simulando essa conexão com o banco e retornando as respostas de sucesso/falha em cada caso de teste.
